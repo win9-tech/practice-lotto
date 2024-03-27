@@ -1,7 +1,10 @@
 package controller;
 
+import model.Lotto;
 import service.LottoService;
 import service.LottoServiceImpl;
+
+import java.util.List;
 
 public class LottoControllerImpl implements LottoController{
 
@@ -20,7 +23,10 @@ public class LottoControllerImpl implements LottoController{
     public void createLotto(int amount) {
         lottoService.createLotto(amount);
     }
-
+    @Override
+    public List<Lotto> getLotto() {
+        return lottoService.getLotto();
+    }
 
     @Override
     public void winningAmount() {
@@ -41,4 +47,6 @@ public class LottoControllerImpl implements LottoController{
     public void rateReturn() {
 
     }
+
+
 }

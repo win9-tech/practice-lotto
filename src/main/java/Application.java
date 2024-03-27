@@ -7,11 +7,12 @@ public class Application {
     static InputView inputView = InputView.getInputView();
     static OutputView outputView = OutputView.getOutputView();
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
     outputView.outputPurchaseAmount();
     int lottoamount = inputView.InputPurchaseAmount(Console.readLine());
     outputView.outputPurchaseResult(lottoamount);
+    outputView.outputGetLotto();
 
     }
 }

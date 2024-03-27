@@ -1,13 +1,18 @@
 package service;
 
+import model.Lotto;
+
+import java.util.List;
+
 public interface LottoService {
 
 
     // 구입 금액 입력 처리
     public int purchaseAmount(int price);
 
-    void createLotto(int amount);
+    public void createLotto(int amount);
 
+    public List<Lotto> getLotto();
     //당첨 번호 입력 처리
     public void winningAmount();
 
@@ -19,6 +24,7 @@ public interface LottoService {
 
     //수익률 처리
     public void rateReturn();
+
 
 
 }

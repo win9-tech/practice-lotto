@@ -1,5 +1,9 @@
 package controller;
 
+import model.Lotto;
+
+import java.util.List;
+
 public interface LottoController {
 
     public int purchaseAmount(int price);
@@ -16,4 +20,6 @@ public interface LottoController {
 
     //수익률 처리
     public void rateReturn();
+
+    List<Lotto> getLotto();
 }
